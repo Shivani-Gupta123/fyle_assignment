@@ -33,3 +33,8 @@ This website allows users to calculate their tax based on their income, deductio
 ## Demo
 
 You can view a live demo of the website [here](#).
+
+## Screenshots
+
+1. [Screenshot 1](https://i.imgur.com/rucmwxP.png)
+2. [Screenshot 2](https://i.imgur.com/NrAMZOL.png)

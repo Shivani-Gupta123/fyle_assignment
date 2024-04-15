@@ -1,98 +1,10 @@
-// // Custom JavaScript
-
-// // document.addEventListener('DOMContentLoaded', function () {
-// //     var calculateButton = document.getElementById('calculateButton');
-// //     if (calculateButton) {
-// //         calculateButton.addEventListener('click', calculateTax);
-// //     } else {
-// //         console.error("Element with ID 'calculateButton' not found.");
-// //     }
-// // });
-
-// // function calculateTax() {
-// //     var income = parseFloat(document.getElementById('income').value);
-// //     var extraIncome = parseFloat(document.getElementById('extraIncome').value);
-// //     var deductions = parseFloat(document.getElementById('deductions').value);
-// //     var age = document.getElementById('age').value;
-
-// //     if (isNaN(income) || isNaN(extraIncome) || isNaN(deductions)) {
-// //         alert("Please enter valid income, extra income, and deductions amounts.");
-// //         return;
-// //     }
-
-// //     if (age === '') {
-// //         alert("Please select your age.");
-// //         return;
-// //     }
-
-// //     var totalIncome = income + extraIncome - deductions;
-// //     var tax = 0;
-
-// //     if (totalIncome > 800000) {
-// //         if (age === '<40') {
-// //             tax = (totalIncome - 800000) * 0.3;
-// //         } else if (age === '>=40&<60') {
-// //             tax = (totalIncome - 800000) * 0.4;
-// //         } else if (age === '>=60') {
-// //             tax = (totalIncome - 800000) * 0.1;
-// //         }
-// //     }
-
-// //     // Display the tax result in the modal
-// //     var taxResultModal = document.getElementById('taxResult');
-// //     taxResultModal.innerText = "Tax to be paid: " + tax.toFixed(2);
-// // }
-
-// // Custom JavaScript
-
-// document.getElementById('calculateButton').addEventListener('click', Submit);
-
-// function calculateTax() {
-//     var income = parseFloat(document.getElementById('income').value);
-//     var extraIncome = parseFloat(document.getElementById('extraIncome').value);
-//     var deductions = parseFloat(document.getElementById('deductions').value);
-//     var age = document.getElementById('age').value;
-
-//     if (isNaN(income) || isNaN(extraIncome) || isNaN(deductions)) {
-//         alert("Please enter valid income, extra income, and deductions amounts.");
-//         return;
-//     }
-
-//     if (age === '') {
-//         alert("Please select your age.");
-//         return;
-//     }
-
-//     var totalIncome = income + extraIncome - deductions;
-//     var tax = 0;
-
-//     if (totalIncome > 800000) {
-//         if (age === '<40') {
-//             tax = (totalIncome - 800000) * 0.3;
-//         } else if (age === '>=40&<60') {
-//             tax = (totalIncome - 800000) * 0.4;
-//         } else if (age === '>=60') {
-//             tax = (totalIncome - 800000) * 0.1;
-//         }
-//     }
-
-//     // Display the tax result in the modal
-//     var taxResultElement = document.getElementById('taxResult');
-//     taxResultElement.innerText = "Tax to be paid: " + tax.toFixed(2);
-    
-//     // Show the modal
-//     $('#taxResultModal').modal('show');
-// }
 
 $(document).ready(function() {
-    // Hide error icons by default
     $('.error-icon').hide();
   
-    // Submit form
     $('#taxForm').submit(function(event) {
       event.preventDefault();
       
-      // Validate inputs
       var isValid = true;
       $('.form-control').each(function() {
         if (!$(this).val()) {

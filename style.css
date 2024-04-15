@@ -1,11 +1,10 @@
 .container{
     border: 1mm solid rgb(196, 196, 195);
     padding: 20px 80px;
-    margin: 30px; 
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin-top: 20px;
+    width: 520px;
 }
 
 h1{
@@ -52,7 +51,6 @@ h1{
     font-weight: bold;
   }
   
-  /* Center the modal */
   .modal-dialog {
     margin: auto;
   }
